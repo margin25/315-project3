@@ -1,2 +1,3 @@
 # 315-project3
-jshkjdh
+Site hosting - Heroku
+Language and framework - Python - Django
