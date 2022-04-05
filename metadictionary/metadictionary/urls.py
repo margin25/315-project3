@@ -20,3 +20,5 @@ urlpatterns = [
     path('searchbar/', include ('searchbar.urls')),
     path('admin/', admin.site.urls),
 ]
+
+print("hello")
