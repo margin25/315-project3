@@ -3,7 +3,10 @@ from django.shortcuts import render
 import _json
 
 # Create your views here.
-def home(request, word):
+def homepage(request):
+    return render(request, 'homepage.html', {})
+
+def wordpage(request, word):
     #get api request url
     url = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/"
     key = "?key=d7045d21-8d0c-4c61-9aea-8321bb66b12e"
@@ -18,4 +21,4 @@ def home(request, word):
         definition = (    ((((((((wordJson[0]['def'])[i])['sseq'])[0])[0])[1])['dt'])[0])[1]   )
 
     definition = definition[4:]
-    return render(request, 'home.html', {"word" : word, "definition": definition})
+    return render(request, 'wordpage.html', {"word" : word, "definition": definition})
