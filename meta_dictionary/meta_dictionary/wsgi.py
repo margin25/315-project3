@@ -1,5 +1,5 @@
 """
-WSGI config for metadictionary project.
+WSGI config for meta_dictionary project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'metadictionary.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'meta_dictionary.settings')
 
 application = get_wsgi_application()
