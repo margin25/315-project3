@@ -1,1 +1,1 @@
-web: gunicorn meta-dictionary.wsgi
+web: sh -c "cd meta_dictionary && gunicorn meta-dictionary.wsgi"
