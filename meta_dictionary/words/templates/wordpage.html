@@ -1,1 +1,11 @@
-<h1> {{word}} : {{definition}}</h1>
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "{% static 'styles.css' %}"> 
+    </head>
+
+    <body>
+        <h1> {{word}} : {{definition}}</h1>
+    </body>
+</html>
