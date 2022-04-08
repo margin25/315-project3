@@ -2,7 +2,7 @@ import os
 import sys
 
 
-path = '/315-project3/meta_dictionary/meta_dictionary'
+path = 'meta_dictionary/meta_dictionary'
 if path not in sys.path:
     sys.path.append(path)
 
